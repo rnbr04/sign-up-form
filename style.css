@@ -60,5 +60,37 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  display: flex;
+  height: 100vh;
 }
 
+.sidebar {
+  flex: 1;
+  background-image: url("./assets/sidebar_image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form {
+  flex: 2;
+}
+
+.text {
+  --sidebar-asset-size: clamp(1rem, 2rem + 1.5vw, 4.5rem);
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #1211118e;
+  margin-top: 30%;
+}
+
+.text img {
+  width: var(--sidebar-asset-size);
+}
+
+.text span {
+  color: white;
+  font-family: blankaregular, Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: var(--sidebar-asset-size);
+}
