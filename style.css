@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'blankaregular';
+    src: url('fonts/blanka-regular-webfont.woff2') format('woff2'),
+         url('fonts/blanka-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+}
