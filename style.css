@@ -94,3 +94,31 @@ body {
   font-family: blankaregular, Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   font-size: var(--sidebar-asset-size);
 }
+
+.login-form {
+  display: flex;
+  flex-flow: column;
+}
+
+.top-text {
+  display: flex;
+  flex-flow: column;
+  padding-top: 10%;
+  padding-bottom: 6%;
+  background-color: #fafafa;
+}
+
+.top-text p {
+  font-weight: bold;
+  font-size: clamp(1rem, 0.75rem + 1.5vw, 1.5rem);
+  max-inline-size: 50ch;
+}
+
+.top-text p:nth-child(3) {
+  margin-top: 3%;
+}
+
+.top-text {
+  padding-left: 5%;
+  padding-right: 15%;
+}
