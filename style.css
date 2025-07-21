@@ -67,13 +67,12 @@ body {
 
 .sidebar {
   flex: 1;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
   background-image: url("./assets/sidebar_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.right {
-  flex: 2;
 }
 
 .text {
@@ -96,10 +95,20 @@ body {
   font-size: var(--sidebar-asset-size);
 }
 
+.credit {
+  align-self: center;
+}
+
+.credit, .credit a {
+  color: white;
+}
+
+
 /* Right Side Styling */
 .right {
   display: flex;
   flex-flow: column;
+  flex: 2;
 }
 
 /* Aligning text and form elements at relevant spacing */
