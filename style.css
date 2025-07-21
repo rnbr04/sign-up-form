@@ -206,6 +206,7 @@ button[type="submit"] {
   border-radius: 4px;
   padding: 0.3rem 1.5rem;
   font-weight: bold;
+  box-shadow: 1px 1px 4px 0px grey;
 }
 
 /* Bottom Text */
