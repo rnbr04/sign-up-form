@@ -61,7 +61,8 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
+  background-color: #fafafa;
 }
 
 .sidebar {
@@ -102,7 +103,7 @@ body {
 }
 
 /* Aligning text and form elements at relevant spacing */
-.top-text, form .form-box, form > .form-row {
+.top-text, form .form-box, form > .form-row, .bottom-text {
   padding-left: 5%;
   padding-right: 15%;
 }
@@ -112,9 +113,8 @@ body {
 .top-text {
   display: flex;
   flex-flow: column;
-  padding-top: 10%;
-  padding-bottom: 6%;
-  background-color: #fafafa;
+  padding-top: 4%;
+  padding-bottom: 3%;
 }
 
 .top-text p {
@@ -142,6 +142,7 @@ form .form-box {
   flex-flow: column;
   gap: 1.3rem;
   box-shadow: 0px 5px 5px -5px #9E9E9E;
+  background-color: white;
 }
 
 /* Form element positioning and font-sizing */
@@ -195,5 +196,17 @@ button[type="submit"] {
   border: none;
   border-radius: 4px;
   padding: 0.3rem 1.5rem;
+  font-weight: bold;
+}
 
+/* Bottom Text */
+.bottom-text {
+  margin-top: 3%;
+  font-weight: 500;
+}
+
+.bottom-text a {
+  color: #9A7B55;
+  font-weight: bold;
+  text-decoration: none;
 }
