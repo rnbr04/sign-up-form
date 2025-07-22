@@ -175,18 +175,30 @@ form .form-row {
 
 /* Input Styles */
 .form-row input {
+  --input-color: #E5E7EB;
   width: 30ch;
-  border: 1px solid #E5E7EB;
+  border: 1.3px solid var(--input-color);
   margin-left: 1%;
 }
 
-.form-row input:focus-visible {
-  border: 1.3px solid rgb(86, 86, 252);
+.form-row input:invalid:focus-visible,
+.form-row input:valid:focus-visible {
   outline: none;
   box-shadow: 1px 1px 4px 0px grey;
 }
 
-.form-row input[type="password"]:invalid {
+.form-row input:invalid:focus-visible,
+.form-row input[type="tel"]:focus-visible {
+  --input-color: rgb(86, 86, 252);
+  
+}
+
+.form-row input:not([type="tel"]):valid:focus-visible {
+  --input-color: rgb(0, 255, 8);
+}
+
+
+.form-row input[type="password"]:invalid:focus-visible {
   border: 1.3px solid red;
 }
 
