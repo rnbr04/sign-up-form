@@ -70,7 +70,7 @@ body {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
-  background-image: url("./assets/sidebar_image.jpg");
+  background-image: url("./assets/images/sidebar_image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
